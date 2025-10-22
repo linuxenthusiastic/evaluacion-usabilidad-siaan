@@ -26,19 +26,21 @@
             position: relative;
         }
 
-        .slide {
-            background: white;
-            width: 90%;
-            max-width: 1000px;
-            height: 85vh;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            padding: 60px;
-            display: none;
-            flex-direction: column;
-            position: relative;
-            animation: slideIn 0.5s ease-out;
-        }
+.slide {
+    background: white;
+    width: 90%;
+    max-width: 1000px;
+    height: 85vh;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    padding: 40px;
+    display: none;
+    flex-direction: column;
+    position: relative;
+    animation: slideIn 0.5s ease-out;
+    overflow-y: auto; /* <-- permite scroll interno */
+}
+
 
         .slide.active {
             display: flex;
